@@ -1,0 +1,184 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ScrollView">
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="top"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    tools:context="com.example.grow.OrgRegisterScreen" >
+	
+	    <EditText
+	        android:id="@+id/NameTextField"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/NameLabel"
+	        android:layout_alignRight="@+id/errorField"
+	        android:layout_toRightOf="@+id/NameLabel"
+	        android:ems="10"
+	        android:inputType="textCapWords"
+	        android:textColorLink="@android:color/holo_green_dark" />
+	
+	    <EditText
+	        android:id="@+id/DescriptionTextField"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/DescriptionLabel"
+	        android:layout_toRightOf="@+id/DescriptionLabel"
+	        android:clickable="true"
+	        android:ems="10"
+	        android:hint="@string/EnterDecsription"
+	        android:inputType="textCapSentences|textMultiLine"
+	        android:isScrollContainer="True"
+	        android:maxLength="500"
+	        android:maxLines="2"
+	        android:scrollbars="vertical"
+	        android:textColorLink="@android:color/holo_green_dark" />
+	
+	    <EditText
+	        android:id="@+id/EmailTextField"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/EmailLabel"
+	        android:layout_alignRight="@+id/PasswordTextField"
+	        android:layout_toRightOf="@+id/EmailLabel"
+	        android:ems="10"
+	        android:inputType="textEmailAddress"
+	        android:textColorLink="@android:color/holo_green_dark" />
+	
+	  	<EditText
+	  	    android:id="@+id/PasswordTextField"
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:layout_alignBottom="@+id/PasswordLabel"
+	  	    android:layout_alignRight="@+id/ConfPassText"
+	  	    android:layout_toRightOf="@+id/PasswordLabel"
+	  	    android:ems="10"
+	  	    android:inputType="textPassword"
+	  	    android:textColorLink="@android:color/holo_green_dark" />
+	
+	    <TextView
+	        android:id="@+id/EmailLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/PasswordLabel"
+	        android:layout_below="@+id/NameLabel"
+	        android:layout_marginTop="28dp"
+	        android:text="@string/Email"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:labelFor="@+id/EmailTextField"/>
+	
+	    <TextView
+	        android:id="@+id/ConfPassLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/DescriptionLabel"
+	        android:layout_below="@+id/PasswordLabel"
+	        android:layout_marginTop="26dp"
+	        android:text="@string/ConfirmPassword"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:labelFor="@+id/ConfPassText"/>
+	
+	    <TextView
+	        android:id="@+id/PasswordLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/ConfPassLabel"
+	        android:layout_below="@+id/EmailTextField"
+	        android:layout_marginTop="29dp"
+	        android:text="@string/Password"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:labelFor="@+id/PasswordTextField"/>
+	
+	    <TextView
+	        android:id="@+id/NameLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/EmailLabel"
+	        android:layout_below="@+id/errorField"
+	        android:layout_marginTop="27dp"
+	        android:text="@string/Name"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:labelFor="@+id/NameTextField"/>
+	
+	    <EditText
+	        android:id="@+id/ConfPassText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/ConfPassLabel"
+	        android:layout_alignRight="@+id/DescriptionTextField"
+	        android:layout_toRightOf="@+id/ConfPassLabel"
+	        android:ems="10"
+	        android:inputType="textPassword"
+	        android:textColorLink="@android:color/holo_green_dark" />
+	
+	    <TextView
+	        android:id="@+id/DescriptionLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/spinner_category"
+	        android:layout_marginTop="19dp"
+	        android:text="@string/Description"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:labelFor="@+id/DescriptionTextField"/>
+	
+	    <Spinner
+	        android:id="@+id/spinner_category"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/ConfPassText"
+	        android:layout_below="@+id/ConfPassText"
+	        android:layout_marginTop="19dp"
+	        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+	
+	    <TextView
+	        android:id="@+id/CategoryLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/spinner_category"
+	        android:layout_alignBottom="@+id/spinner_category"
+	        android:layout_alignLeft="@+id/ConfPassLabel"
+	        android:text="@string/Category"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <Button
+	        android:id="@+id/SignUpButton"
+	        android:layout_width="100dp"
+	        android:layout_height="40dp"
+	        android:layout_below="@+id/DescriptionTextField"
+	      	android:layout_marginTop="40dp"
+	        android:layout_alignRight="@+id/DescriptionTextField"
+	        android:background="@drawable/button_custom"
+	        android:onClick="orgSignUp"
+	        android:text="@string/SignUp"
+	        android:textColor="@drawable/custom_text_color" />
+
+	    <TextView
+	        android:id="@+id/errorField"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/NameLabel"
+	        android:layout_alignRight="@+id/EmailTextField"
+	        android:layout_marginTop="15dp"
+	        android:textColor="@color/red" 
+	        android:layout_below="@+id/OrgSignInHeader"/>
+
+	    <TextView
+	        android:id="@+id/OrgSignInHeader"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/errorField"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/NewOrg" 
+	        android:textColor="@color/grow_green"
+	        android:textSize="30sp"/>
+
+	</RelativeLayout>
+</ScrollView>

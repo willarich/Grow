@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:id="@+id/ScrollView">
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/SuperOrgInfoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="22dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/grow_green"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/NameEditTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/NameEditLabel"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/NameEditLabel"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:textColorLink="@android:color/holo_green_dark" />
+
+    <EditText
+        android:id="@+id/DescriptionEditTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DescriptionEditLabel"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:ems="10"
+        android:inputType="textCapSentences|textMultiLine"
+        android:isScrollContainer="True"
+        android:maxLength="500"
+        android:maxLines="2"
+        android:scrollbars="vertical"
+        android:textColorLink="@android:color/holo_green_dark" />
+
+    <EditText
+        android:id="@+id/EmailEditTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EmailEditLabel"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/EmailEditLabel"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorLink="@android:color/holo_green_dark" />
+
+    <TextView
+        android:id="@+id/DescriptionEditLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CategoryEditLabel"
+        android:layout_below="@+id/SignEditUpButton"
+        android:layout_marginTop="22dp"
+        android:labelFor="@+id/DescriptionEditTextField"
+        android:text="@string/Description"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/CategoryEditLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EmailEditLabel"
+        android:layout_below="@+id/EmailEditLabel"
+        android:layout_marginTop="22dp"
+        android:text="@string/Category"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/errorEditField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SuperOrgInfoTitle"
+        android:layout_alignRight="@+id/SignEditUpButton"
+        android:layout_below="@+id/SuperOrgInfoTitle"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/NameEditLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SuperOrgInfoTitle"
+        android:layout_below="@+id/SuperOrgInfoTitle"
+        android:layout_marginTop="22dp"
+        android:labelFor="@+id/NameEditTextField"
+        android:text="@string/Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/EmailEditLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NameEditLabel"
+        android:layout_below="@+id/NameEditTextField"
+        android:layout_marginTop="22dp"
+        android:labelFor="@+id/EmailEditTextField"
+        android:text="@string/Email"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/SignEditUpButton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CategoryEditLabel"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/button_custom"
+        android:text="@string/EditEventDetails"
+        android:textColor="@drawable/custom_text_color" />
+
+    <Spinner
+        android:id="@+id/spinnerEditcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/SignEditUpButton"
+        android:layout_below="@+id/EmailEditTextField"
+        android:layout_toRightOf="@+id/DescriptionEditLabel"
+        tools:listitem="@android:layout/simple_dropdown_item_1line" />
+	
+	</RelativeLayout>
+</ScrollView>
+

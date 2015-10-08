@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    tools:context="com.example.grow.OrgSuccessSignUp" >
+
+    <TextView
+        android:id="@+id/thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="@string/SuccessOrgSignUp" />
+
+    <Button
+        android:id="@+id/backToSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/civicengage"
+        android:layout_alignRight="@+id/civicengage"
+        android:layout_below="@+id/civicengage"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/button_custom"
+        android:text="@string/Home"
+        android:textColor="@drawable/custom_text_color" 
+        android:onClick="goHome"/>
+
+    <TextView
+        android:id="@+id/civicengage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/thanks"
+        android:layout_alignRight="@+id/thanks"
+        android:layout_below="@+id/thanks"
+        android:layout_marginTop="34dp"
+        android:text="@string/CivicEngage" />
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ScrollView">
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="left"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    tools:context="com.example.grow.OrgRegisterScreen" >
+	
+	    <EditText
+	        android:id="@+id/StudentName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/NameStuLabel"
+	        android:layout_alignRight="@+id/StudentEmail"
+	        android:layout_toRightOf="@+id/NameStuLabel"
+	        android:ems="10"
+	        android:inputType="textCapWords"
+	        android:textColorLink="@android:color/holo_green_dark" >
+	
+	        <requestFocus />
+	    </EditText>
+	    
+	    <EditText
+	        android:id="@+id/StudentEmail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/EmailStuLabel"
+	        android:layout_alignRight="@+id/StudentPassword"
+	        android:layout_toRightOf="@+id/NameStuLabel"
+	        android:ems="10"
+	        android:inputType="textEmailAddress"
+	        android:textColorLink="@android:color/holo_green_dark" />
+	
+	    <EditText
+	        android:id="@+id/stuConfPassText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/stuConfPassLabel"
+	        android:layout_toRightOf="@+id/stuConfPassLabel"
+	        android:ems="10"
+	        android:inputType="textPassword"
+	        android:textColorLink="@android:color/holo_green_dark" />
+	
+	    <TextView
+	        android:id="@+id/stuConfPassLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/PasswordStuLabel"
+	        android:layout_below="@+id/PasswordStuLabel"
+	        android:layout_marginTop="28dp"
+	        android:text="@string/ConfirmPassword"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:labelFor="@+id/stuConfPassText"/>
+	
+	    <TextView
+	        android:id="@+id/NameStuLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/stuErrorField"
+	        android:layout_marginTop="15dp"
+	        android:text="@string/Name"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:labelFor="@+id/StudentName"/>
+	
+	    <TextView
+	        android:id="@+id/EmailStuLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/NameStuLabel"
+	        android:layout_below="@+id/NameStuLabel"
+	        android:layout_marginTop="27dp"
+	        android:text="@string/Email"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:labelFor="@+id/StudentEmail"/>
+	
+	    <TextView
+	        android:id="@+id/PasswordStuLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/EmailStuLabel"
+	        android:layout_below="@+id/StudentEmail"
+	        android:layout_marginTop="25dp"
+	        android:text="@string/Password"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        android:labelFor="@+id/StudentPassword"/>
+	
+	    <EditText
+	        android:id="@+id/StudentPassword"
+	        android:layout_width="10dp"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/stuConfPassLabel"
+	        android:layout_alignRight="@+id/stuConfPassText"
+	        android:layout_toRightOf="@+id/NameStuLabel"
+	        android:ems="10"
+	        android:inputType="textPassword"
+	        android:textColorLink="@android:color/holo_green_dark" />
+	
+	    <TextView
+	        android:id="@+id/stuErrorField"
+	        android:layout_width="wrap_content"
+	        android:layout_height="20dp"
+	        android:layout_alignLeft="@+id/NameStuLabel"
+	        android:layout_alignRight="@+id/StudentName"
+	        android:layout_below="@+id/StudentRegScreenHeader"
+	        android:layout_marginTop="15dp"
+	        android:textColor="@color/red" />
+    
+    
+
+    <Button
+        android:id="@+id/StudentSignUpButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/stuConfPassText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_custom"
+        android:onClick="studentRegister"
+        android:text="@string/SignUp"
+        android:textColor="@drawable/custom_text_color" />
+	    
+	    <TextView
+	        android:id="@+id/StudentRegScreenHeader"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/stuErrorField"
+	        android:layout_alignParentTop="true"
+	        android:text="@string/NewStudent" 
+	        android:textColor="@color/grow_green"
+	        android:textSize="30sp"/>
+	    
+	</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="518dp" >
+
+        <TextView
+            android:id="@+id/SupEditOrgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/grow_green"
+            android:textSize="40sp" />
+
+        <CheckBox
+            android:id="@+id/VerifiedCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/VerifiedLabel"
+            android:layout_alignBottom="@+id/VerifiedLabel"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/VerifiedLabel" />
+
+        <ImageButton
+            android:id="@+id/SuperCreateEventButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/SuperCreateEventLabel"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/SuperCreateEventLabel"
+            android:background="@drawable/button_custom_image"
+            android:contentDescription="@string/SuperCreateEvent"
+            android:onClick="newEvent"
+            android:src="@drawable/ic_action_content_add" />
+
+        <TextView
+            android:id="@+id/SuperCreateEventLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/VerifiedLabel"
+            android:layout_below="@+id/VerifiedCheckBox"
+            android:layout_marginTop="45dp"
+            android:labelFor="@+id/SuperCreateEventButton"
+            android:text="@string/SuperCreateEvent"
+            android:textColor="@color/grow_green"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/VerifiedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/SupEditOrgName"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="60dp"
+            android:labelFor="@+id/VerifiedCheckBox"
+            android:text="@string/Superverified"
+            android:textColor="@color/grow_green"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/SuperListEvents"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/SuperCreateEventLabel"
+            android:layout_below="@+id/SuperCreateEventButton"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/button_custom"
+            android:text="@string/SuperListEvents"
+            android:textColor="@drawable/custom_text_color" />
+        
+        <Button
+            android:id="@+id/SuperEditOrgInformation"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/SuperCreateEventLabel"
+            android:layout_below="@+id/SuperListEvents"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/button_custom"
+            android:text="@string/SuperEditOrgInformation"
+            android:textColor="@drawable/custom_text_color" />
+        
+        <Button 
+            android:id="@+id/SuperDeleteOrg"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/SuperCreateEventLabel"
+            android:layout_below="@+id/SuperEditOrgInformation"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/button_custom"
+            android:textColor="@drawable/custom_text_color"
+            android:text="@string/Delete"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

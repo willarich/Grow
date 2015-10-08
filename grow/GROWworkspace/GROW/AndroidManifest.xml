@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.grow"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/grow_gauncher_icon_hdpi"
+        android:label="@string/AppName"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name="com.example.grow.MainActivity"
+            android:label="@string/AppName" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+
+            android:name="com.example.grow.OrgRegisterScreen"
+            android:label="@string/AppName"
+            android:parentActivityName="com.example.grow.SignInPageOrg" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.grow.SignInPageOrg" />
+        </activity>
+        <activity
+            android:name="com.example.grow.StudentRegisterScreen"
+            android:label="@string/AppName"
+            android:parentActivityName="com.example.grow.SignInPageStudent" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.grow.SignInPageStudent" />
+        </activity>
+        <activity
+            android:name="com.example.grow.SignInPageStudent"
+            android:label="@string/AppName"
+            android:parentActivityName="com.example.grow.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.grow.MainActivity" />
+        </activity>
+        <activity
+
+            android:name="com.example.grow.SignInPageOrg"
+            android:label="@string/AppName"
+            android:parentActivityName="com.example.grow.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.grow.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.grow.OrgSuccessSignUp"
+            android:label="@string/AppName"
+            android:parentActivityName="com.example.grow.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.grow.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.grow.OrgMainNav"
+            android:label="@string/AppName"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.grow.SignInPageOrg" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.grow.SignInPageOrg" />
+        </activity>
+        <activity
+            android:name="com.example.grow.StudentMainNav"
+            android:label="@string/AppName"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.grow.SignInPageStudent" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.grow.SignInPageOrg" />
+        </activity>
+        <activity
+            android:name="com.example.grow.SuperUserMain"
+            android:label="@string/AppName">
+        </activity>
+
+        <activity
+            android:name="com.example.grow.SuperOrgEditor"
+            android:label="@string/AppName"
+            android:parentActivityName="com.example.grow.SuperUserMain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.grow.SuperUserMain" />
+        </activity>
+       
+        <activity 
+            android:name="com.example.grow.OrgCreateEvent" 
+            android:label="@string/AppName"
+            android:parentActivityName="com.example.grow.SignInPageOrg" >
+            <meta-data
+                 android:name="android.support.PARENT_ACTIVITY" 
+                 android:value="com.example.grow.SignInPageOrg"/>
+        </activity>
+        <activity 
+            android:name="com.example.grow.StudentMainFeed" 
+            android:label="@string/AppName"
+            android:parentActivityName="com.example.grow.SignInPageStudent" >
+            <meta-data
+                 android:name="android.support.PARENT_ACTIVITY" 
+                 android:value="com.example.grow.SignInPageStudent"/>
+        </activity>
+        
+         <activity 
+            android:name="com.example.grow.StudentEventInfo" 
+            android:label="@string/AppName"
+            android:parentActivityName="com.example.grow.StudentMainFeed" >
+            <meta-data
+                 android:name="android.support.PARENT_ACTIVITY" 
+                 android:value="com.example.grow.StudentMainFeed"/>
+        </activity>
+         <activity 
+            android:name="com.example.grow.StudentConfirmationPage" 
+            android:label="@string/AppName"
+            android:parentActivityName="com.example.grow.StudentMainNav" >
+            <meta-data
+                 android:name="android.support.PARENT_ACTIVITY" 
+                 android:value="com.example.grow.StudentEventInfo"/>
+        </activity>
+
+        <activity 
+            android:name="com.example.grow.OrgEventInfo" 
+            android:label="@string/AppName"
+            android:parentActivityName="com.example.grow.OrgMainNav" >
+            <meta-data
+                 android:name="android.support.PARENT_ACTIVITY" 
+                 android:value="com.example.grow.OrgMainPage"/>
+        </activity>
+        
+        <activity android:name="com.example.grow.SuperOrgCreateEvent" />
+		
+        <activity android:name="com.example.grow.SuperEventList" />
+        
+		<activity android:name="com.example.grow.SuperEditEvent" />
+		
+		<activity android:name="com.example.grow.SuperEditOrgInformation"/>
+        
+    </application>
+
+</manifest>

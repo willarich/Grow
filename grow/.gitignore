@@ -1,0 +1,50 @@
+# Compiled Java files
+*.class
+
+# Editor backup files
+*~
+*.bak
+*.swp
+*~.nib
+
+# Eclipse configuration files
+# NOTE: If you want to use the Git plugin for Eclipse, then 
+# do NOT exclude .classpath and .project! I recommend against this!
+.settings/
+.metadata/
+.classpath
+.project
+
+# Compiled output files are normally placed in the bin directory
+bin/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+.Icon?
+ehthumbs.db
+Thumbs.db
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+tmp/**
+tmp/**/*
+*.tmp
+.loadpath
+.launch

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="About">About:</string>
+    <string name="AccountInfo">Account Info</string>
+    <string name="ActionSearch">Search</string>
+    <string name="ActionSettings">Settings</string>
+    <string name="AppName">GROW</string>
+    <string name="Category">Category</string>
+    <string name="CreateEvent">Create Event</string>
+    <string name="EditEventDetails">Submit Changes</string>
+    <string name="Date">Date</string>
+	<string name="Description">Description</string>
+	<string name="EditInfo">Edit Info</string>
+	<string name="Email">Email</string>
+    <string name="EnterDecsription">Please enter a desctiption.</string>
+    <string name="ExistingUser">Existing User?</string>
+    <string name="Host">Host</string>
+    <string name="Name">Username</string>
+    <string name="Home">Home</string>
+    <string name="NewEvent">New Event</string>
+    <string name="NoAccount">Don\'t have an account? Create one!</string>
+    <string name="OrgAddInfo">Want to add more information about your group? Put it here!</string>
+    <string name="OrganizationButton">Organization</string>
+	<string name="ConfirmPassword">Confirm Password</string>
+    <string name="VerifyAccountText">Your information will be verified before account is available for use.</string>
+    <string name="Title">Title</string>
+    <string name="Time">Time</string>
+    <string name="SuccessOrgSignUp">Thank you for signing up for GROW!</string>
+    <string name="CivicEngage"> Once you organization is verified by the Office of Civic Engagement, you will receive a 
+        confirmation email and will then be able to post community service opportunities to the main event feed! </string>
+    <string name="title_activity_org_main_page">OrgMainPage</string>
+    <string name="title_activity_super_user_main">SuperUserMain</string>
+    <string name="Password">Password</string>
+    <string name="PeopleNeeded">People Needed</string>
+	<string name="SignIn">Sign In</string>
+	<string name="SignUp">Sign Up</string>
+    <string name="StudentAddInfo">Want to add more information about yourself? Put it here!</string>
+	<string name="StudentButton">Student</string>
+	<string name="Superverified">Verified</string>
+	<string name="SuperCreateEvent">Create Event</string>
+	<string name="SuperEditOrgInformation">Edit Information</string>
+	<string name="SuperListEvents">All Events</string>
+	<string name="WelcomeSuper">Super</string>
+	<string name="DateFormat">MM/DD/YYYY</string>
+	<string name="TimeHint">11:30pm</string>
+	<string name="LogOut">Logout</string>
+	<string name="Delete">Delete Organization</string>
+	<string name="StudentHeader">Student</string>
+	<string name="NewStudent">New Student</string>
+	<string name="NewOrg">New Organization</string>
+	<string-array name="SpinnerCategoryArray">
+	    <item>Please Select One...</item>
+	    <item>Agriculture/Gardening</item>
+	    <item>Animal Welfare</item>
+	    <item>Arts/Culture</item>
+	    <item>Children/Youth/Families</item>
+	    <item>Civil Rights</item>
+	    <item>Community Development</item>
+	    <item>Community Education/Outreach</item>
+	    <item>Computer/Social Media</item>
+	    <item>Environment</item>
+	    <item>Food Security/Hunger/Nutrition</item>
+	    <item>Gender/Sexuality Concerns</item>
+	    <item>Government</item>
+	    <item>Health/Medical Services</item>
+	    <item>Historic Preservation</item>
+	    <item>Housing/Homeless</item>
+	    <item>Immigration</item>
+	    <item>Legal</item>
+	    <item>Peace/Justice/Unity Work</item>
+	    <item>Religious Life</item>
+	    <item>Safety/Crime/Injury Prevention</item>
+	    <item>School/K-12</item>
+	    <item>Senior Citizens</item>
+	    <item>Sports and Fitness</item>
+	    <item>Technical (Engineering, Manufacturing)</item>
+	    <item>Other</item>
+	</string-array>
+
+
+     <!-- Nav Drawer Menu Items -->
+    <string-array name="org_nav_drawer_items">
+        <item >Home</item>
+        <item >Create Event</item>
+        <item >My Account</item>
+        <item >Log Out</item>
+    </string-array>
+
+     <!-- Nav Drawer Menu Items -->
+    <string-array name="student_nav_drawer_items">
+        <item >Home</item>
+        <item >My Events</item>
+        <item >My Account</item>
+        <item >Log Out</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_events</item>
+        <item>@drawable/ic_acount</item>
+        <item>@drawable/ic_logout</item>
+    </array>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+
+</resources>

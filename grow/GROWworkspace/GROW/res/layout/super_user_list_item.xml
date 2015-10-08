@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent" >
+ 
+	<TextView 
+	    android:id="@+id/SupOrgListName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="70dp"
+		android:gravity="center_vertical"
+		android:singleLine="true"
+		android:textSize="25sp"
+		android:ellipsize="end"
+		android:textColor="@color/grow_green"
+		android:paddingLeft="10dp" />
+
+	<ImageView
+	    android:id="@+id/SupOrgListVerified"
+	    android:layout_width="wrap_content"
+	    android:layout_height="70dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:ellipsize="end"
+	    android:gravity="center_vertical"
+	    android:textColor="@color/grow_green"
+	    android:textSize="25sp" 
+	    android:paddingRight="10dp"/>
+
+</RelativeLayout>

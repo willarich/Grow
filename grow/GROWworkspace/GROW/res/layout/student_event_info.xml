@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:id="@+id/ScrollView">
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    tools:context="com.example.grow.MainActivity" >
+
+    <TextView
+        android:id="@+id/errorField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/red" 
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <TextView
+        android:id="@+id/event_host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/Host"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/event_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_host"
+        android:layout_marginTop="22dp"
+        android:text="@string/Title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/event_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/event_title"
+        android:layout_below="@+id/event_title"
+        android:layout_marginTop="22dp"
+        android:text="@string/Date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/event_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/event_date"
+        android:layout_below="@+id/event_date"
+        android:layout_marginTop="22dp"
+        android:text="@string/Time"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/event_peopleNeeded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/event_time"
+        android:layout_below="@+id/event_time"
+        android:layout_marginTop="22dp"
+        android:text="@string/PeopleNeeded"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <Button
+        android:id="@+id/JoinEventButton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/event_numPplText"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/event_numPplText"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/button_custom"
+        android:onClick="studentJoinEvent"
+        android:textColor="@drawable/custom_text_color" />
+    
+    <TextView
+        android:id="@+id/event_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/event_peopleNeeded"
+        android:layout_below="@+id/JoinEventButton"
+        android:layout_marginTop="22dp"
+        android:text="@string/Description"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    
+    <TextView
+		android:id="@+id/event_hostText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@+id/event_host"
+		android:layout_alignBottom="@+id/event_host"
+		android:layout_alignParentRight="true"/>
+
+    <TextView
+		android:id="@+id/event_titleText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@+id/event_title"
+		android:layout_alignBottom="@+id/event_title"
+		android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/event_dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/event_date"
+        android:layout_alignBottom="@+id/event_date"
+		android:layout_alignParentRight="true"/>
+    
+    <TextView
+        android:id="@+id/event_timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/event_time"
+		android:layout_alignBottom="@+id/event_time"
+		android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/event_numPplText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/event_peopleNeeded"
+        android:layout_alignBottom="@+id/event_peopleNeeded"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/event_descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/event_description"
+        android:layout_below="@+id/event_description"
+    	android:layout_marginTop="18dp" />
+
+	</RelativeLayout>
+</ScrollView>
+
